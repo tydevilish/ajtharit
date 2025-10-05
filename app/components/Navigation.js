@@ -63,7 +63,7 @@ export default function Navigation() {
   const menuItems = [
     { title: 'เกี่ยวกับตนเอง', href: '/about' },
     { title: 'งานวิจัย', href: '/research' },
-    { title: 'รางวัล', href: '#awards' },
+    { title: 'รางวัล', href: '/awards' },
     { title: 'ความภาคภูมิใจ', href: '#achievements' },
     { title: 'บริการวิชาการ', href: '#services' },
     { title: 'การพัฒนาตนเอง', href: '#development' }
@@ -107,7 +107,7 @@ export default function Navigation() {
                 </div>
               </div>
               <div className="hidden sm:block relative z-10">
-                <div className="font-bold text-gray-800 text-sm md:text-base leading-tight bg-gradient-to-r from-gray-800 to-green-700 bg-clip-text text-transparent">
+                <div className="font-bold text-gray-800 text-sm md:text-base leading-tight bg-gray-800 bg-clip-text text-transparent">
                   Tharit Chaimongkul
                 </div>
                 <div className="text-xs md:text-sm text-gray-600 font-medium flex items-center space-x-1">
