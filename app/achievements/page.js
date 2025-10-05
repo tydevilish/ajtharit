@@ -210,36 +210,24 @@ export default function Achievements() {
       {/* Image Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-gray-800/70 z-50 flex items-center justify-center"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-6xl max-h-[90vh] w-full">
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-              {/* Modal Header */}
-              <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-emerald-50 to-lime-50">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-slate-800">Achievement</h3>
-                  <button
-                    onClick={() => setSelectedImage(null)}
-                    className="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors"
-                  >
-                    <span className="text-slate-600 text-xl">×</span>
-                  </button>
-                </div>
-              </div>
-              
-              {/* Modal Image */}
-              <div className="p-6">
-                <div className="relative w-full max-h-[70vh] overflow-hidden rounded-xl bg-gradient-to-br from-slate-50 to-slate-100">
-                  <img 
-                    src={selectedImage.image} 
-                    alt={`Achievement ${selectedImage.id}`}
-                    className="w-full h-full object-contain"
-                    onClick={(e) => e.stopPropagation()}
-                  />
-                </div>
-              </div>
-            </div>
+          <div className="relative w-full h-full flex items-center justify-center">
+            <img 
+              src={selectedImage.image} 
+              alt={`Achievement ${selectedImage.id}`}
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            
+            {/* Close button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 w-12 h-12 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center transition-colors z-10"
+            >
+              <span className="text-white text-2xl">×</span>
+            </button>
           </div>
         </div>
       )}
