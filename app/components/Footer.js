@@ -3,12 +3,12 @@
 
 export default function Footer() {
   const menuItems = [
-    { title: "เกี่ยวกับตนเอง", href: "#about" },
-    { title: "งานวิจัย", href: "#research" },
-    { title: "รางวัล", href: "#awards" },
-    { title: "ความภาคภูมิใจ", href: "#achievements" },
-    { title: "บริการวิชาการ", href: "#services" },
-    { title: "การพัฒนาตนเอง", href: "#development" },
+    { title: "เกี่ยวกับตนเอง", href: "/about" },
+    { title: "งานวิจัย", href: "/research" },
+    { title: "รางวัล", href: "/awards" },
+    { title: "ความภาคภูมิใจ", href: "/achievements" },
+    { title: "บริการวิชาการ", href: "/services" },
+    { title: "การพัฒนาตนเอง", href: "/development" },
   ];
 
   return (
